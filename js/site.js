@@ -59,4 +59,25 @@
   var onMQ = function () { if (mq.matches) closeMenu(); };
   if (mq.addEventListener) mq.addEventListener('change', onMQ);
   else if (mq.addListener) mq.addListener(onMQ);
+
+  // Scroll reveal — subtle fade-up on entry. Honors reduced motion.
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealTargets = document.querySelectorAll('[data-reveal]');
+
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    for (var i = 0; i < revealTargets.length; i++) {
+      revealTargets[i].classList.add('is-revealed');
+    }
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
+
+    revealTargets.forEach(function (el) { io.observe(el); });
+  }
 })();

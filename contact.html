@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Della Mountain</title>
+  <meta name="description" content="Begin a conversation about Della Mountain — pre-sale inquiries for the twelve live/work commercial condominiums in Hailey, Idaho.">
+
+  <!-- TODO favicon -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       GLOBAL HEADER
+       ===================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+
+      <a class="wordmark" href="/" aria-label="Della Mountain — home">
+        <span class="wordmark__name">Della Mountain</span>
+        <span class="wordmark__place">Hailey, Idaho</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="/">Home</a></li>
+          <li><a class="primary-nav__link" href="/units.html">The Units</a></li>
+          <li><a class="primary-nav__link" href="/gallery.html">Gallery</a></li>
+          <li><a class="primary-nav__link" href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn--ghost primary-nav__cta" href="/contact.html">Inquire</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top container">
+      <a class="wordmark" href="/" aria-label="Della Mountain — home">
+        <span class="wordmark__name">Della Mountain</span>
+        <span class="wordmark__place">Hailey, Idaho</span>
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li><a class="mobile-menu__link" href="/">Home</a></li>
+      <li><a class="mobile-menu__link" href="/units.html">The Units</a></li>
+      <li><a class="mobile-menu__link" href="/gallery.html">Gallery</a></li>
+      <li><a class="mobile-menu__link" href="/contact.html" aria-current="page">Contact</a></li>
+      <li><a class="btn mobile-menu__cta" href="/contact.html">Inquire</a></li>
+    </ul>
+  </div>
+
+  <main id="content">
+
+    <!-- =====================================================
+         SECTION 1 — PAGE HEADER
+         ===================================================== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <h1 class="page-title page-head__title" data-reveal>Begin a conversation.</h1>
+        <p class="page-head__lead" data-reveal>
+          Pricing, current availability, and unit-by-unit details are shared directly. Tell us a little about what you're looking for and we'll be in touch.
+        </p>
+        <hr class="page-head__rule">
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 2 — INQUIRY FORM + SIDE PANEL
+         ===================================================== -->
+    <section class="section section--contact">
+      <div class="container contact-grid">
+
+        <!-- =====================
+             FORM (left column)
+             ===================== -->
+        <div class="contact-form-col">
+          <!--
+            TRACKED PLACEHOLDER — replace action URL with real Formspree endpoint
+            (e.g. https://formspree.io/f/xxxxxxxx) routed to sales@dellamountain.com.
+            Do not launch with placeholder.
+          -->
+          <div id="inquiry-form-wrap" class="inquiry-form-wrap">
+            <form id="inquiry-form"
+                  class="inquiry-form"
+                  action="TRACKED__FORMSPREE_ENDPOINT__REPLACE_BEFORE_LAUNCH"
+                  method="POST"
+                  novalidate>
+
+              <!-- Name -->
+              <div class="field">
+                <label class="field__label" for="inq-name">Name</label>
+                <input class="field__input" type="text" id="inq-name" name="name"
+                       required autocomplete="name"
+                       aria-describedby="inq-name-error">
+                <p class="field__error" id="inq-name-error" hidden></p>
+              </div>
+
+              <!-- Email -->
+              <div class="field">
+                <label class="field__label" for="inq-email">Email</label>
+                <input class="field__input" type="email" id="inq-email" name="email"
+                       required autocomplete="email"
+                       aria-describedby="inq-email-error">
+                <p class="field__error" id="inq-email-error" hidden></p>
+              </div>
+
+              <!-- Phone (optional) -->
+              <div class="field">
+                <label class="field__label" for="inq-phone">
+                  Phone <span class="field__optional">(optional)</span>
+                </label>
+                <input class="field__input" type="tel" id="inq-phone" name="phone"
+                       autocomplete="tel">
+              </div>
+
+              <!-- Area of interest (radio pill group) -->
+              <fieldset class="field field--pill-group" aria-describedby="inq-interest-error">
+                <legend class="field__label">Area of interest</legend>
+                <div class="pill-group">
+                  <input type="radio" id="inq-interest-shell"   name="interest" value="Warm Shell"   required>
+                  <label for="inq-interest-shell">Warm Shell</label>
+
+                  <input type="radio" id="inq-interest-turnkey" name="interest" value="Turn-Key"     required>
+                  <label for="inq-interest-turnkey">Turn-Key</label>
+
+                  <input type="radio" id="inq-interest-notsure" name="interest" value="Not sure yet" required>
+                  <label for="inq-interest-notsure">Not sure yet</label>
+                </div>
+                <p class="field__error" id="inq-interest-error" hidden></p>
+              </fieldset>
+
+              <!-- Message (optional) -->
+              <div class="field">
+                <label class="field__label" for="inq-message">
+                  Message <span class="field__optional">(optional)</span>
+                </label>
+                <textarea class="field__input field__textarea" id="inq-message" name="message" rows="5"></textarea>
+              </div>
+
+              <!-- Submission-level error (network / non-2xx) -->
+              <p class="form-submit-error" id="inq-submit-error" hidden></p>
+
+              <!-- Submit -->
+              <div class="form-actions">
+                <button class="btn inquiry-form__submit" type="submit" id="inq-submit">Send inquiry</button>
+              </div>
+
+              <p class="form-note">
+                By submitting, you'll be contacted by the Della Mountain sales team. We don't share your information.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- =====================
+             SIDE PANEL (right column)
+             ===================== -->
+        <aside class="contact-aside" aria-label="Direct contact and address">
+
+          <!-- PLACEHOLDER QUALITY — swap for high-resolution rendering when architect delivers. -->
+          <div class="contact-aside__image" role="img"
+               aria-label="Angled rendering of Della Mountain showing the approach from the parking court."></div>
+
+          <div class="contact-aside__block">
+            <p class="eyebrow">Direct</p>
+            <p class="contact-aside__email">
+              <a href="mailto:sales@dellamountain.com">sales@dellamountain.com</a>
+            </p>
+            <p class="contact-aside__sub">
+              Prefer to email? Write us directly — we read every message.
+            </p>
+          </div>
+
+          <hr class="contact-aside__rule">
+
+          <div class="contact-aside__block">
+            <p class="eyebrow">The Site</p>
+            <address class="contact-aside__address">
+              Della Mountain<br>
+              1611 Aviation Drive<br>
+              Hailey, Idaho
+            </address>
+          </div>
+
+          <hr class="contact-aside__rule">
+
+          <div class="contact-aside__block">
+            <p class="eyebrow">Response</p>
+            <p class="contact-aside__response">
+              We respond within one business day.
+            </p>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       GLOBAL FOOTER
+       ===================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="site-footer__zones">
+        <div class="site-footer__zone site-footer__zone--brand">
+          <a class="wordmark wordmark--invert" href="/" aria-label="Della Mountain — home">
+            <span class="wordmark__name">Della Mountain</span>
+            <span class="wordmark__place">Hailey, Idaho</span>
+          </a>
+        </div>
+
+        <div class="site-footer__zone site-footer__zone--nav">
+          <ul class="site-footer__nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/units.html">The Units</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <p class="site-footer__contact">
+            <a href="mailto:sales@dellamountain.com">sales@dellamountain.com</a>
+          </p>
+        </div>
+
+        <div class="site-footer__zone site-footer__zone--closing">
+          <p class="site-footer__closing">
+            Commercial condominiums with live/work opportunities.
+            <span class="site-footer__address">1611 Aviation Drive, Hailey, Idaho</span>
+          </p>
+        </div>
+      </div>
+
+      <hr class="site-footer__divider">
+
+      <!-- DRAFT DISCLAIMER — REQUIRES ATTORNEY REVIEW BEFORE LAUNCH -->
+      <p class="site-footer__disclaimer">
+        This website is for general marketing and informational purposes only. It does not constitute an offer to sell, or the solicitation of an offer to buy, any unit, and creates no contractual rights or obligations. All renderings, depictions, floor plans, dimensions, materials, and features are artist's conceptual representations provided for illustration only and are subject to change; actual construction may vary. Information, availability, and pricing are subject to change or withdrawal at any time without notice. Each unit is a commercial condominium subject to applicable zoning and use requirements; any accessory dwelling unit is subject to City of Hailey guidelines and approvals. Any sale will be made solely pursuant to a fully executed purchase agreement, the terms of which control in all respects. Equal Housing Opportunity.
+      </p>
+
+      <p class="site-footer__copyright">&copy; 2026 Della Mountain. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <script src="/js/site.js" defer></script>
+  <script src="/js/contact.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#F4F1EC"/>
+  <text x="32" y="44" text-anchor="middle"
+        font-family="'Fraunces', Georgia, serif"
+        font-weight="500" font-size="36" fill="#2B2724"
+        letter-spacing="-1">DM</text>
+</svg>

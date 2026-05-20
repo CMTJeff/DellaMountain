@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Della Mountain</title>
+  <meta name="description" content="A short film and gallery of Della Mountain — the three-building development on Aviation Drive in Hailey, Idaho, with twelve live/work commercial condominiums.">
+
+  <!-- TODO favicon -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       GLOBAL HEADER
+       ===================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+
+      <a class="wordmark" href="/" aria-label="Della Mountain — home">
+        <span class="wordmark__name">Della Mountain</span>
+        <span class="wordmark__place">Hailey, Idaho</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="/">Home</a></li>
+          <li><a class="primary-nav__link" href="/units.html">The Units</a></li>
+          <li><a class="primary-nav__link" href="/gallery.html" aria-current="page">Gallery</a></li>
+          <li><a class="primary-nav__link" href="/contact.html">Contact</a></li>
+        </ul>
+        <a class="btn--ghost primary-nav__cta" href="/contact.html">Inquire</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top container">
+      <a class="wordmark" href="/" aria-label="Della Mountain — home">
+        <span class="wordmark__name">Della Mountain</span>
+        <span class="wordmark__place">Hailey, Idaho</span>
+      </a>
+      <button class="mobile-menu__close" type="button" aria-label="Close menu">&times;</button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li><a class="mobile-menu__link" href="/">Home</a></li>
+      <li><a class="mobile-menu__link" href="/units.html">The Units</a></li>
+      <li><a class="mobile-menu__link" href="/gallery.html" aria-current="page">Gallery</a></li>
+      <li><a class="mobile-menu__link" href="/contact.html">Contact</a></li>
+      <li><a class="btn mobile-menu__cta" href="/contact.html">Inquire</a></li>
+    </ul>
+  </div>
+
+  <main id="content">
+
+    <!-- =====================================================
+         SECTION 1 — PAGE HEADER (compact)
+         ===================================================== -->
+    <section class="page-head page-head--gallery">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Gallery</p>
+        <h1 class="page-title page-head__title" data-reveal>See it.</h1>
+        <p class="page-head__lead" data-reveal>
+          A short film and a closer look at Della Mountain — its forms, its frontage, and the rooms above.
+        </p>
+        <hr class="page-head__rule">
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 2 — THE FILM
+         ===================================================== -->
+    <section class="section section--film">
+      <div class="container">
+        <header class="film-head" data-reveal>
+          <p class="eyebrow">The Film</p>
+          <div class="film-head__meta">
+            <p class="film-head__title">A walk through Della Mountain.</p>
+            <!-- TRACKED — replace with actual runtime when video is final. -->
+            <p class="film-head__runtime">Approx. 2 min.</p>
+          </div>
+        </header>
+
+        <!--
+          TRACKED PLACEHOLDER — replace with finalized Vimeo embed code.
+          Final asset needs a standard Vimeo video link (vimeo.com/[id]) with
+          embedding enabled and privacy set to "unlisted" or "public".
+
+          When ready, replace the .film-placeholder div below with:
+          <iframe src="https://player.vimeo.com/video/[ID]?title=0&byline=0&portrait=0&color=A86C3C"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                  title="A walk through Della Mountain"></iframe>
+          (The color=A86C3C parameter ties the Vimeo player's accent to --timber.)
+        -->
+        <div class="film-frame" data-reveal>
+          <div class="film-placeholder" role="img" aria-label="Della Mountain film — placeholder, final cut to be embedded.">
+            <span class="film-placeholder__play" aria-hidden="true"></span>
+            <p class="film-placeholder__title">Film coming soon</p>
+            <p class="film-placeholder__sub">Final cut will be embedded here before launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 3 — EXTERIORS
+         ===================================================== -->
+    <section class="section section--exteriors">
+      <div class="container">
+        <header class="gallery-head" data-reveal>
+          <p class="eyebrow">Exteriors</p>
+          <h2 class="section-heading">Forms and frontage.</h2>
+          <p class="gallery-head__lead">
+            Three buildings, twelve units — and a storefront row along Aviation Drive.
+          </p>
+        </header>
+
+        <!-- PLACEHOLDER QUALITY — swap for high-resolution renderings when architect delivers. -->
+        <div class="exteriors-grid">
+          <figure class="gallery-item gallery-item--wide" data-reveal>
+            <button class="gallery-item__btn" type="button"
+                    data-lightbox data-lightbox-group="exteriors"
+                    data-lightbox-src="/assets/hero-exterior.jpg"
+                    data-lightbox-caption="The three buildings, from the meadow frontage"
+                    aria-label="Open larger view — three buildings from the meadow frontage">
+              <img src="/assets/hero-exterior.jpg" loading="lazy"
+                   alt="Rendering of three two-story buildings at Della Mountain, viewed across the landscaped meadow frontage.">
+            </button>
+            <figcaption class="gallery-item__caption">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              The three buildings, from the meadow frontage
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-reveal>
+            <button class="gallery-item__btn" type="button"
+                    data-lightbox data-lightbox-group="exteriors"
+                    data-lightbox-src="/assets/exterior-angle.jpg"
+                    data-lightbox-caption="Approach from the parking court"
+                    aria-label="Open larger view — approach from the parking court">
+              <img src="/assets/exterior-angle.jpg" loading="lazy"
+                   alt="Angled rendering of Della Mountain showing the approach from the parking court, with roll-up commercial doors and upper-level bays.">
+            </button>
+            <figcaption class="gallery-item__caption">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Approach from the parking court
+            </figcaption>
+          </figure>
+
+          <!-- PLACEHOLDER QUALITY — new rendering, drop final file at /assets/parking-court.jpg. -->
+          <figure class="gallery-item" data-reveal>
+            <button class="gallery-item__btn" type="button"
+                    data-lightbox data-lightbox-group="exteriors"
+                    data-lightbox-src="/assets/parking-court.jpg"
+                    data-lightbox-caption="Garage doors and upper terraces"
+                    aria-label="Open larger view — garage doors and upper terraces">
+              <img src="/assets/parking-court.jpg" loading="lazy"
+                   alt="Rendering of the parking court at Della Mountain, showing grade-level garage doors and upper-level terraces.">
+            </button>
+            <figcaption class="gallery-item__caption">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Garage doors and upper terraces
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item gallery-item--wide" data-reveal>
+            <button class="gallery-item__btn" type="button"
+                    data-lightbox data-lightbox-group="exteriors"
+                    data-lightbox-src="/assets/building-1-storefront.jpg"
+                    data-lightbox-caption="Aviation Drive elevation — the storefront row"
+                    aria-label="Open larger view — Aviation Drive elevation, the storefront row">
+              <img src="/assets/building-1-storefront.jpg" loading="lazy"
+                   alt="Aviation Drive street-elevation rendering — Building 1 storefront frontage at Della Mountain.">
+            </button>
+            <figcaption class="gallery-item__caption">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Aviation Drive elevation — the storefront row
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 4 — INTERIORS (launch placeholder)
+         TRACKED PLACEHOLDER SECTION — six interior renderings
+         expected from architect. Section structure is final;
+         only the image files and captions need to be supplied.
+         Do not launch with placeholder blocks visible.
+
+         To swap in: replace each .interior-slot block with:
+           <figure class="gallery-item">
+             <button class="gallery-item__btn" type="button"
+                     data-lightbox data-lightbox-group="interiors"
+                     data-lightbox-src="/assets/interior-0X.jpg"
+                     data-lightbox-caption="[final caption]"
+                     aria-label="Open larger view — [final caption]">
+               <img src="/assets/interior-0X.jpg" loading="lazy" alt="[final alt]">
+             </button>
+             <figcaption class="gallery-item__caption">
+               <span class="gallery-item__rule" aria-hidden="true"></span>
+               [final caption]
+             </figcaption>
+           </figure>
+         If fewer than six interiors arrive, comment out the unused slots.
+         ===================================================== -->
+    <section class="section section--interiors">
+      <div class="container">
+        <header class="gallery-head" data-reveal>
+          <p class="eyebrow">Interiors</p>
+          <h2 class="section-heading">Rooms above.</h2>
+          <p class="gallery-head__lead">
+            A look at the second-floor accessory dwelling unit, finished to the city-approved plan.
+          </p>
+        </header>
+
+        <div class="interiors-grid">
+          <!-- TRACKED PLACEHOLDER captions — replace when interiors land. -->
+          <figure class="interior-slot" aria-label="Interior placeholder — Living area, to be supplied">
+            <div class="interior-slot__frame"><span>Interior — to be supplied</span></div>
+            <figcaption class="gallery-item__caption gallery-item__caption--muted">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Living area
+            </figcaption>
+          </figure>
+          <figure class="interior-slot" aria-label="Interior placeholder — Kitchen, to be supplied">
+            <div class="interior-slot__frame"><span>Interior — to be supplied</span></div>
+            <figcaption class="gallery-item__caption gallery-item__caption--muted">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Kitchen
+            </figcaption>
+          </figure>
+          <figure class="interior-slot" aria-label="Interior placeholder — Bedroom, to be supplied">
+            <div class="interior-slot__frame"><span>Interior — to be supplied</span></div>
+            <figcaption class="gallery-item__caption gallery-item__caption--muted">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Bedroom
+            </figcaption>
+          </figure>
+          <figure class="interior-slot" aria-label="Interior placeholder — Bath, to be supplied">
+            <div class="interior-slot__frame"><span>Interior — to be supplied</span></div>
+            <figcaption class="gallery-item__caption gallery-item__caption--muted">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Bath
+            </figcaption>
+          </figure>
+          <figure class="interior-slot" aria-label="Interior placeholder — View from the deck, to be supplied">
+            <div class="interior-slot__frame"><span>Interior — to be supplied</span></div>
+            <figcaption class="gallery-item__caption gallery-item__caption--muted">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              View from the deck
+            </figcaption>
+          </figure>
+          <figure class="interior-slot" aria-label="Interior placeholder — Stair to upper level, to be supplied">
+            <div class="interior-slot__frame"><span>Interior — to be supplied</span></div>
+            <figcaption class="gallery-item__caption gallery-item__caption--muted">
+              <span class="gallery-item__rule" aria-hidden="true"></span>
+              Stair to upper level
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 5 — THE SITE PLAN (TRACKED PLACEHOLDER)
+         Marketing-suitable site plan to be supplied. Likely
+         derived from architect's AS1.00 sheet. Drop into
+         /assets/site-plan.jpg (or .svg) and replace the
+         placeholder block below.
+         ===================================================== -->
+    <section class="section section--site-plan">
+      <div class="container">
+        <header class="gallery-head gallery-head--center" data-reveal>
+          <p class="eyebrow">Site Plan</p>
+          <h2 class="section-heading">Three buildings on Aviation Drive.</h2>
+          <p class="gallery-head__lead">
+            Building 1 fronts Aviation Drive; Buildings 2 and 3 sit interior to the shared parking court.
+          </p>
+        </header>
+
+        <figure class="site-plan-figure" data-reveal>
+          <div class="site-plan-placeholder" role="img" aria-label="Site plan — placeholder, to be supplied.">
+            <span>Site plan — to be supplied</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTION 6 — CLOSING CTA
+         ===================================================== -->
+    <section class="section section--closing">
+      <div class="container closing-cta">
+        <p class="eyebrow" data-reveal>Inquire</p>
+        <h2 class="section-heading closing-cta__heading" data-reveal>Want to walk it in person?</h2>
+        <p class="body-copy closing-cta__line" data-reveal>
+          A visit can be arranged once construction is underway — and we're happy to share more in the meantime.
+        </p>
+        <div class="closing-cta__actions" data-reveal>
+          <a class="btn" href="/contact.html">Contact us</a>
+          <p class="closing-cta__mail">
+            Or email <a href="mailto:sales@dellamountain.com">sales@dellamountain.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       GLOBAL FOOTER
+       ===================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="site-footer__zones">
+        <div class="site-footer__zone site-footer__zone--brand">
+          <a class="wordmark wordmark--invert" href="/" aria-label="Della Mountain — home">
+            <span class="wordmark__name">Della Mountain</span>
+            <span class="wordmark__place">Hailey, Idaho</span>
+          </a>
+        </div>
+
+        <div class="site-footer__zone site-footer__zone--nav">
+          <ul class="site-footer__nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/units.html">The Units</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <p class="site-footer__contact">
+            <a href="mailto:sales@dellamountain.com">sales@dellamountain.com</a>
+          </p>
+        </div>
+
+        <div class="site-footer__zone site-footer__zone--closing">
+          <p class="site-footer__closing">
+            Commercial condominiums with live/work opportunities.
+            <span class="site-footer__address">1611 Aviation Drive, Hailey, Idaho</span>
+          </p>
+        </div>
+      </div>
+
+      <hr class="site-footer__divider">
+
+      <!-- DRAFT DISCLAIMER — REQUIRES ATTORNEY REVIEW BEFORE LAUNCH -->
+      <p class="site-footer__disclaimer">
+        This website is for general marketing and informational purposes only. It does not constitute an offer to sell, or the solicitation of an offer to buy, any unit, and creates no contractual rights or obligations. All renderings, depictions, floor plans, dimensions, materials, and features are artist's conceptual representations provided for illustration only and are subject to change; actual construction may vary. Information, availability, and pricing are subject to change or withdrawal at any time without notice. Each unit is a commercial condominium subject to applicable zoning and use requirements; any accessory dwelling unit is subject to City of Hailey guidelines and approvals. Any sale will be made solely pursuant to a fully executed purchase agreement, the terms of which control in all respects. Equal Housing Opportunity.
+      </p>
+
+      <p class="site-footer__copyright">&copy; 2026 Della Mountain. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- =====================================================
+       LIGHTBOX (gallery only)
+       ===================================================== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image">&lsaquo;</button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">&rsaquo;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__image" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="/js/site.js" defer></script>
+  <script src="/js/gallery.js" defer></script>
+</body>
+</html>

@@ -1418,44 +1418,6 @@ body.menu-open { overflow: hidden; }
   border: 0;
 }
 
-.film-placeholder {
-  position: absolute;
-  inset: 0;
-  background: var(--ink);
-  color: var(--paper);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-sm);
-  padding: var(--space-md);
-  text-align: center;
-}
-.film-placeholder__play {
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 28px solid var(--timber);
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  margin-bottom: var(--space-sm);
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
-}
-.film-placeholder__title {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
-  color: var(--paper);
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-.film-placeholder__sub {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: rgba(244, 241, 236, 0.7);
-  margin: 0;
-}
-
 /* ---------- Gallery head (shared by Exteriors / Interiors / Site Plan) ---------- */
 .gallery-head {
   margin-bottom: var(--space-lg);
@@ -1705,11 +1667,6 @@ body.lightbox-open { overflow: hidden; }
 
 /* Sub-480 tightening */
 @media (max-width: 480px) {
-  .film-placeholder__play {
-    border-left-width: 22px;
-    border-top-width: 14px;
-    border-bottom-width: 14px;
-  }
   .lightbox__nav--prev { left: 4px; }
   .lightbox__nav--next { right: 4px; }
   .lightbox__close { top: 4px; right: 4px; }

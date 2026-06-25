@@ -1014,6 +1014,16 @@ body.menu-open { overflow: hidden; }
   .split--60-40 { grid-template-columns: 60fr 40fr; }
 }
 
+.plan-intro {
+  max-width: var(--measure-narrow);
+  margin-bottom: var(--space-lg);
+}
+.plan-intro .section-heading {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+.plan-intro .body-copy + .body-copy { margin-top: var(--space-sm); }
+
 .unit-plans {
   display: grid;
   grid-template-columns: 1fr 1fr;

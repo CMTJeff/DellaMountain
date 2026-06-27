@@ -116,16 +116,28 @@
 
         <div class="unit-plans" data-reveal>
           <figure class="unit-plan">
-            <img src="/assets/unit-plan-shell.png"
-                 width="1600" height="6906"
-                 loading="lazy"
-                 alt="Warm Shell unit floor plan — Level 2 open shell above, Level 1 commercial floor below">
+            <button class="gallery-item__btn" type="button"
+                    data-lightbox data-lightbox-group="unit-plans"
+                    data-lightbox-src="/assets/unit-plan-shell.png"
+                    data-lightbox-caption="Warm Shell floor plan — Level 2 open shell above, Level 1 commercial floor below"
+                    aria-label="Open larger view — Warm Shell floor plan">
+              <img src="/assets/unit-plan-shell.png"
+                   width="1600" height="6906"
+                   loading="lazy"
+                   alt="Warm Shell unit floor plan — Level 2 open shell above, Level 1 commercial floor below">
+            </button>
           </figure>
           <figure class="unit-plan">
-            <img src="/assets/unit-plan.png"
-                 width="1600" height="6906"
-                 loading="lazy"
-                 alt="Turn-Key unit floor plan — Level 2 finished ADU and office above, Level 1 commercial floor below">
+            <button class="gallery-item__btn" type="button"
+                    data-lightbox data-lightbox-group="unit-plans"
+                    data-lightbox-src="/assets/unit-plan.png"
+                    data-lightbox-caption="Turn-Key floor plan — Level 2 finished ADU and office above, Level 1 commercial floor below"
+                    aria-label="Open larger view — Turn-Key floor plan">
+              <img src="/assets/unit-plan.png"
+                   width="1600" height="6906"
+                   loading="lazy"
+                   alt="Turn-Key unit floor plan — Level 2 finished ADU and office above, Level 1 commercial floor below">
+            </button>
           </figure>
         </div>
       </div>
@@ -441,7 +453,21 @@
     </div>
   </footer>
 
+  <!-- =====================================================
+       LIGHTBOX (unit floor plans)
+       ===================================================== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" type="button" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous image">&lsaquo;</button>
+    <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next image">&rsaquo;</button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__image" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+  </div>
+
   <script src="/js/site.js" defer></script>
   <script src="/js/units.js" defer></script>
+  <script src="/js/gallery.js" defer></script>
 </body>
 </html>

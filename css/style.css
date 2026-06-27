@@ -1534,26 +1534,6 @@ body.menu-open { overflow: hidden; }
   max-width: var(--measure-narrow);
   margin: 0 auto;
 }
-.site-plan-placeholder {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  background: var(--greige-soft);
-  border: 1px solid var(--bronze);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--space-md);
-}
-.site-plan-placeholder span {
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--ink-soft);
-}
 
 /* ---------- Lightbox ---------- */
 .lightbox {

@@ -1494,7 +1494,6 @@ body.menu-open { overflow: hidden; }
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-md);
-  align-items: start;
 }
 @media (min-width: 600px) {
   .interiors-grid { grid-template-columns: 1fr 1fr; }
@@ -1502,6 +1501,9 @@ body.menu-open { overflow: hidden; }
 @media (min-width: 1024px) {
   .interiors-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
+
+/* Uniform 3:2 landscape tiles — object-fit: cover from the shared .gallery-item__btn img rule */
+.interiors-grid .gallery-item__btn img { aspect-ratio: 3 / 2; }
 
 /* ---------- Section 5 — Site Plan ---------- */
 .site-plan-figure {

@@ -1494,39 +1494,13 @@ body.menu-open { overflow: hidden; }
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-md);
+  align-items: start;
 }
 @media (min-width: 600px) {
   .interiors-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 1024px) {
   .interiors-grid { grid-template-columns: 1fr 1fr 1fr; }
-}
-
-.interior-slot {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
-.interior-slot__frame {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  background: var(--greige-soft);
-  border: 1px solid var(--bronze);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--space-md);
-}
-.interior-slot__frame span {
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--ink-soft);
 }
 
 /* ---------- Section 5 — Site Plan ---------- */

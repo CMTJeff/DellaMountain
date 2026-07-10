@@ -61,7 +61,11 @@
   // --- 2. Compute available count + inject everywhere ---
   var availableCount = units.filter(function (u) { return u.status === 'available'; }).length;
   var countTargets = document.querySelectorAll('[data-availability-count]');
-  countTargets.forEach(function (el) { el.textContent = numberWord(availableCount); });
+  var availableWord = numberWord(availableCount);
+  // The one page that loads this script (units.html) uses the count at
+  // sentence-start ("Twelve units. Ten currently available."), so capitalise here.
+  var availableWordCapped = availableWord.charAt(0).toUpperCase() + availableWord.slice(1);
+  countTargets.forEach(function (el) { el.textContent = availableWordCapped; });
 
   // --- 3 + 4. Selection handling ---
   var detail = document.querySelector('[data-unit-detail-content]');
